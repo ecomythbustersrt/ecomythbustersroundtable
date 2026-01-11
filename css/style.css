@@ -675,3 +675,22 @@ footer {
     padding: 1rem;
   }
 }
+
+/*Typing caret home page*/
+
+.typing-caret {
+  border-right: 0.12em solid currentColor;
+  padding-right: 0.05em;
+  animation: caret-blink 1s ease-in-out infinite;
+}
+
+@keyframes caret-blink {
+  0%   { border-color: transparent; }
+  50%  { border-color: currentColor; }
+  100% { border-color: transparent; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
