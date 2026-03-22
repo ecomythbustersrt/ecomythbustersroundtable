@@ -3,69 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>Blogs | Eco-Mythbusters</title>
-
   <link rel="icon" href="../imgs/favicon-32x32.png">
   <link rel="stylesheet" href="../css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eco-Mythbusters - debunking environmental myths using data, science, and critical thinking." />
+  <meta name="description" content="Eco-Mythbusters blog series — evidence-backed analysis of environmental myths." />
   <script src="https://kit.fontawesome.com/cad18a28f3.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
 
 <header class="site-header">
   <img src="../imgs/ecomythlogofohead.png" alt="Eco-Mythbusters Logo">
 </header>
+
 <nav class="site-nav">
   <button class="close-nav" aria-label="Close menu">✕</button>
-  <button class="nav-toggle" aria-label="open navigation">
+  <button class="nav-toggle" aria-label="Open navigation">
     <span class="hamburger"></span>
   </button>
-
   <div class="nav-links">
     <a href="../index.html">Home</a>
-    <a href="../html/blogs.html">Blogs</a>
+    <a href="../html/blogs.html" class="active">Blogs</a>
     <a href="../html/podcasts.html">Podcasts</a>
     <a href="../html/contact.html">Contact Us</a>
   </div>
 </nav>
 
+<div class="page-header">
+  <h1>The Blog Series</h1>
+  <p>Evidence-backed deep dives into the myths shaping how we think about sustainability.</p>
+</div>
+
 <main class="container">
-  <h1>Blogs</h1>
+  <div class="grid">
 
-  <section class="grid">
-    <article class="card">
-      <h2>Blog 1: Are Electric Scooters Really Green?</h2>
-      <p>
-        A full lifecycle analysis reveals the true environmental impact
-        of electric vehicles.
+    <!-- Blog 1 -->
+    <article class="card reveal">
+      <div class="blog-card-header">
+        <span class="badge badge-latest">Latest</span>
+      </div>
+      <h2 class="blog-card-title">Blog 1: Are Electric Scooters Really Green?</h2>
+      <p class="blog-card-desc">
+        A full lifecycle analysis — from lithium extraction to battery disposal — reveals the true environmental impact of electric scooters in urban India.
       </p>
-
-      <a class="link"
-         href="../blogs/Eco-Mythbusters Roundtable Blog 1.pdf"
-         target="_blank">
-        Read Full Blog (PDF)
-      </a><br>
-      <a href="../blogs/Eco-Mythbusters Roundtable Blog 1.pdf" download class="downloadblogbtn">
-        <i class="fa-solid fa-download" style="margin-right: 5px;"></i> Download PDF
-      </a>
-      <br>
-      <small>January 11th, 2026</small>
-    </article>
-    <article class="card">
-      <h2>Blog 2: Recycling Myths that waste money more than they help</h2>
-      <h3 style="text-align: center;">Coming Soon!</h3>
-      <p>
-        A new Eco-Mythbusters deep dive is currently in the works! <br> Stay tuned for evidence-backed analysis on another widely believed sustainability myth.
-      </p>
-
-      <small>Upcoming</small>
+      <p class="blog-card-meta"><i class="fa-regular fa-calendar" style="margin-right:5px;"></i>January 11, 2026 &nbsp;·&nbsp; <i class="fa-regular fa-clock" style="margin-right:5px;"></i>8 min read</p>
+      <div class="blog-card-actions">
+        <a class="link" href="../blogs/Eco-Mythbusters Roundtable Blog 1.pdf" target="_blank">
+          <i class="fa-regular fa-file-pdf"></i> Read PDF
+        </a>
+        <a href="../blogs/Eco-Mythbusters Roundtable Blog 1.pdf" download class="downloadblogbtn">
+          <i class="fa-solid fa-download"></i> Download
+        </a>
+      </div>
     </article>
 
-  </section>
+    <!-- Blog 2 Coming Soon -->
+    <article class="card reveal" style="opacity: 0.85;">
+      <div class="blog-card-header">
+        <span class="badge badge-upcoming">Coming Soon</span>
+      </div>
+      <h2 class="blog-card-title">Blog 2: Recycling Myths That Waste More Than They Help</h2>
+      <p class="blog-card-desc">
+        A new Eco-Mythbusters deep dive is currently in the works — evidence-backed analysis of another widely believed sustainability myth.
+      </p>
+      <p class="blog-card-meta"><i class="fa-regular fa-calendar" style="margin-right:5px;"></i>Upcoming</p>
+      <a href="../html/contact.html" class="link">Get notified →</a>
+    </article>
+
+  </div>
 </main>
+
 <footer>
-  <p>&copy; Eco-Mythbusters Roundtable | Created by Ritayush Suchismita Dey</p>
+  <p>&copy; Eco-Mythbusters Roundtable | Created by <strong>Ritayush Suchismita Dey</strong></p>
 </footer>
 
 <script src="../js/main.js" defer></script>

@@ -3,92 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <title>Eco-Mythbusters Roundtable</title>
-
   <link rel="icon" href="imgs/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Eco-Mythbusters - debunking environmental myths using data, science, and critical thinking." />
+  <meta name="description" content="Eco-Mythbusters — debunking environmental myths using data, science, and critical thinking." />
   <script src="https://kit.fontawesome.com/cad18a28f3.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 <body>
-
+ 
 <header class="site-header">
   <img src="imgs/ecomythlogofohead.png" alt="Eco-Mythbusters Logo">
 </header>
+ 
 <nav class="site-nav">
   <button class="close-nav" aria-label="Close menu">✕</button>
-  <button class="nav-toggle" aria-label="open navigation">
+  <button class="nav-toggle" aria-label="Open navigation">
     <span class="hamburger"></span>
   </button>
-
   <div class="nav-links">
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="html/blogs.html">Blogs</a>
     <a href="html/podcasts.html">Podcasts</a>
     <a href="html/contact.html">Contact Us</a>
   </div>
 </nav>
-<main class="container">
+ 
+<!-- HERO -->
+<section class="hero-section">
   <h1 id="hero-heading" class="hero-heading">
-  <span class="debunk">❝ Debunk.</span>
-  <span class="discuss">Discuss.</span>
-  <span class="discover">Discover.  ❞</span>
-</h1>
-
-  <p class="subtitle" style="text-align: center;">
-    Your one-stop hub for <strong>analytical blogs</strong> and <strong>expert podcasts</strong> to uncover the truth behind <strong>environmental myths</strong>.
+    <span class="debunk">❝ Debunk.</span>
+    <span class="discuss"> Discuss.</span>
+    <span class="discover"> Discover. ❞</span>
+  </h1>
+  <p class="hero-subtitle">
+    Your one-stop hub for <strong>analytical blogs</strong> and <strong>expert podcasts</strong> that uncover the truth behind environmental myths.
   </p>
-  <p class="subtitle"><strong>Problem Statement:</strong> Environmental information is often clouded by myths, half-truths, and trend-driven claims, leaving communities confused and misinformed. This is an effort to move from <strong>noise</strong> to <strong>expert-driven nuances</strong>.</p>
-
-  <section class="carousel card">
-  <button class="carousel-arrow left" onclick="prevSlide()">&#10094;</button>
-
-  <div class="carousel-track">
-    <div class="slide active">
-      <h2>About</h2>
-      <p>
-        Eco-Mythbusters Roundtable is a digital hub combining a myth-busting blog series with a roundtable podcast series. Each blog post breaks down a common sustainability myth and each podcast episode builds on the blog by featuring roundtable discussions with peers, local voices, and professionals, possibly ranging from environmental scientists, NGO workers, and sustainability entrepreneurs, to tech innovators and policymakers
-      </p>
-    </div>
-
-    <div class="slide">
-      <h2>Mission Statement</h2>
-      <p>
-        To help young people and communities make smarter sustainability choices by debunking eco-myths, while also amplifying professional and community voices that connect environmental issues to real-world challenges and solutions.
-      </p>
-    </div>
-
-    <div class="slide">
-      <h2>About the Creator</h2>
-      <img src="imgs/meimg.png" alt="Photo of Ritayush Suchismita Dey" id="me-photo">
-      <br>
-      <h3>Ritayush Suchismita Dey</h3>
-      <p style="text-align: left;">
-        Hi! I'm Ritayush Suchismita Dey, a 16-year-old high school student and developer from India. I've been programming for over 6 years and have built more than 100 projects throughout my learning journey. <br><br>
-
-Beyond technology, I have a strong interest in environmental sustainability and in uncovering the truths behind commonly accepted narratives. I believe that meaningful change begins with accurate information, critical thinking, open discussion, and expertise. Through my work, I aim to combine technology, research, and communication to challenge misconceptions, promote awareness, and help people engage more thoughtfully with the environmental issues that shape our future. <br><br>
-
-I hope you find this platform insightful and empowering, and that it encourages you to question, learn, and contribute toward a more informed and sustainable world.
-      </p>
-    </div>
-  </div>
-
-  <button class="carousel-arrow right" onclick="nextSlide()">&#10095;</button>
-
-  <div class="carousel-dots">
-    <span class="dot active" onclick="goToSlide(0)"></span>
-    <span class="dot" onclick="goToSlide(1)"></span>
-    <span class="dot" onclick="goToSlide(2)"></span>
+  <div class="hero-ctas">
+    <a href="html/blogs.html" class="btn-primary">Read the Blogs →</a>
+    <a href="html/podcasts.html" class="btn-outline">Listen to Podcasts</a>
   </div>
 </section>
-
-</main>
-
+ 
+<!-- STAT STRIP -->
+<div class="stat-strip">
+  <div class="stat-item">
+    <span class="stat-number">1</span>
+    <span class="stat-label">Blog Published</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">1</span>
+    <span class="stat-label">Podcast Episode</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">100%</span>
+    <span class="stat-label">Evidence-Backed</span>
+  </div>
+</div>
+ 
+<!-- ABOUT -->
+<section class="info-section reveal">
+  <p class="section-label">What We Do</p>
+  <h2 class="section-title">About Eco-Mythbusters Roundtable</h2>
+  <p class="section-body">
+    Eco-Mythbusters Roundtable is a digital hub combining a myth-busting blog series with a roundtable podcast series. Each blog post breaks down a common sustainability myth — and each podcast episode builds on that blog by featuring roundtable discussions with peers, local voices, and professionals, ranging from environmental scientists and NGO workers to tech innovators and policymakers.
+  </p>
+</section>
+ 
+<hr class="section-divider">
+ 
+<!-- MISSION -->
+<section class="info-section alt reveal">
+  <div class="info-inner">
+    <p class="section-label">Our Purpose</p>
+    <h2 class="section-title">Mission Statement</h2>
+    <p class="section-body">
+      To help young people and communities make smarter sustainability choices by debunking eco-myths, while amplifying professional and community voices that connect environmental issues to real-world challenges and solutions.
+    </p>
+    <br>
+    <p class="section-body" style="font-style: italic; color: #4b5563;">
+      <strong>Why this matters:</strong> Environmental information is often clouded by myths, half-truths, and trend-driven claims. This platform is an effort to move from <strong>noise</strong> to <strong>expert-driven nuance</strong>.
+    </p>
+  </div>
+</section>
+ 
+<hr class="section-divider">
+ 
+<!-- CREATOR -->
+<section class="info-section reveal">
+  <p class="section-label">The Creator</p>
+  <h2 class="section-title">About Ritayush Suchismita Dey</h2>
+  <div class="creator-grid">
+    <img src="imgs/meimg.png" alt="Photo of Ritayush Suchismita Dey" id="me-photo">
+    <div>
+      <p class="section-body">
+        Hi! I'm Ritayush Suchismita Dey, a 16-year-old high school student and developer from India. I've been programming for over 6 years and have built more than 100 projects throughout my learning journey.
+      </p>
+      <br>
+      <p class="section-body">
+        Beyond technology, I have a strong interest in environmental sustainability and in uncovering the truths behind commonly accepted narratives. I believe meaningful change begins with accurate information, critical thinking, open discussion, and expertise.
+      </p>
+      <br>
+      <a href="html/contact.html" class="link">Get in touch →</a>
+    </div>
+  </div>
+</section>
+ 
 <footer>
-  <p>&copy; Eco-Mythbusters Roundtable | Created by Ritayush Suchismita Dey</p>
+  <p>&copy; Eco-Mythbusters Roundtable | Created by <strong>Ritayush Suchismita Dey</strong></p>
 </footer>
-
+ 
 <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact | Eco-Mythbusters</title>
-
   <link rel="icon" href="../imgs/favicon-32x32.png">
   <link rel="stylesheet" href="../css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eco-Mythbusters - debunking environmental myths using data, science, and critical thinking." />
+  <meta name="description" content="Get in touch with Eco-Mythbusters Roundtable." />
   <script src="https://kit.fontawesome.com/cad18a28f3.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
 
@@ -19,42 +17,95 @@
 
 <nav class="site-nav">
   <button class="close-nav" aria-label="Close menu">✕</button>
-  <button class="nav-toggle" aria-label="open navigation">
+  <button class="nav-toggle" aria-label="Open navigation">
     <span class="hamburger"></span>
   </button>
-
   <div class="nav-links">
     <a href="../index.html">Home</a>
     <a href="../html/blogs.html">Blogs</a>
     <a href="../html/podcasts.html">Podcasts</a>
-    <a href="../html/contact.html">Contact Us</a>
+    <a href="../html/contact.html" class="active">Contact Us</a>
   </div>
 </nav>
 
+<div class="page-header">
+  <h1>Get in Touch</h1>
+  <p>Questions, feedback, or want to collaborate? We'd love to hear from you.</p>
+</div>
+
 <main class="container">
+  <div class="contact-grid">
 
-  <div class="card contact-card">
-    <h2>Contact Us</h2>
-    <p>We'd love to hear from you! Reach out via any of the options below.</p>
+    <!-- Left: info -->
+    <div class="contact-card reveal">
+      <h2>Connect With Us</h2>
+      <p>Reach out through any of the channels below, or send a message using the form.</p>
 
-    <div class="contact-icons">
-      <a href="mailto:ecomythbustersrt@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/ritayushsdey/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/eco.mythbusters_roundtable/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <div class="contact-icons">
+        <a href="mailto:ecomythbustersrt@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ritayushsdey/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/eco.mythbusters_roundtable/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:ecomythbustersrt@gmail.com">ecomythbustersrt@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <span>Bengaluru, India</span>
+      </div>
+
+      <div class="guest-box">
+        <h3><i class="fa-solid fa-microphone" style="margin-right:6px;"></i>Want to be a Guest Speaker?</h3>
+        <p>We're always looking for experts, innovators, and community voices. Email us with <strong>"Roundtable Participation Request"</strong> as the subject line.</p>
+      </div>
     </div>
-    <div class="contact-item">
-      <i class="fa-solid fa-map-location-dot"></i>
-      <span><strong>Location:</strong> Bengaluru, India</span>
+
+    <!-- Right: form -->
+    <div class="contact-card reveal">
+      <h2>Send a Message</h2>
+      <p>We'll get back to you as soon as possible.</p>
+
+      <form class="contact-form" action="https://formspree.io/f/mreyvooz" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject-select">Subject</label>
+          <select id="subject-select">
+            <option value="">Select a topic...</option>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Roundtable Participation Request">Roundtable Participation Request</option>
+            <option value="Blog / Podcast Feedback">Blog / Podcast Feedback</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group" id="other-subject-group" style="display:none; overflow:hidden; transition: max-height 0.3s ease, opacity 0.3s ease; max-height:0; opacity:0;">
+          <label for="other-subject">Please specify your topic</label>
+          <input type="text" id="other-subject" placeholder="Topic" maxlength="100">
+        </div>
+        <!-- Hidden field submitted as the email subject -->
+        <input type="hidden" id="subject" name="subject">
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          <i class="fa-solid fa-paper-plane" style="margin-right:6px;"></i>Send Message
+        </button>
+      </form>
     </div>
-    <br>
-    <h3 style="margin-top: 20px;">Want to be a Guest Speaker?</h3>
-    <p style="margin-top:1rem; font-size:0.95rem; color: var(--text-muted);">
-     We're always looking for experts, innovators, and community voices to join our roundtable discussions. <br>Email us with <strong>"Roundtable Participation Request"</strong> as your subject line!
-    </p>
   </div>
 </main>
+
 <footer>
-  <p>&copy; Eco-Mythbusters Roundtable | Created by Ritayush Suchismita Dey</p>
+  <p>&copy; Eco-Mythbusters Roundtable | Created by <strong>Ritayush Suchismita Dey</strong></p>
 </footer>
 
 <script src="../js/main.js" defer></script>

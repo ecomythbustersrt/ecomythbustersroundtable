@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Podcasts | Eco-Mythbusters</title>
-
   <link rel="icon" href="../imgs/favicon-32x32.png">
   <link rel="stylesheet" href="../css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eco-Mythbusters - debunking environmental myths using data, science, and critical thinking." />
+  <meta name="description" content="Eco-Mythbusters roundtable podcast series — expert discussions on environmental myths." />
   <script src="https://kit.fontawesome.com/cad18a28f3.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
 
@@ -19,36 +17,78 @@
 
 <nav class="site-nav">
   <button class="close-nav" aria-label="Close menu">✕</button>
-  <button class="nav-toggle" aria-label="open navigation">
+  <button class="nav-toggle" aria-label="Open navigation">
     <span class="hamburger"></span>
   </button>
-
   <div class="nav-links">
     <a href="../index.html">Home</a>
     <a href="../html/blogs.html">Blogs</a>
-    <a href="../html/podcasts.html">Podcasts</a>
+    <a href="../html/podcasts.html" class="active">Podcasts</a>
     <a href="../html/contact.html">Contact Us</a>
   </div>
 </nav>
 
-<main class="container">
-  <h1>Podcasts</h1>
+<div class="page-header">
+  <h1>The Podcast Series</h1>
+  <p>Roundtable discussions with experts, community voices, and critical thinkers.</p>
+</div>
 
-  <article class="card">
-    <a href="https://youtu.be/O83vXZ1L4kk?si=G1TWWgoXW4IMnLg4" class="podcast-link" target="_blank">
-      <div class="play-button">
-        <i class="fa-solid fa-play"></i>
+<main class="container">
+
+  <div class="grid">
+
+    <!-- Episode 1 -->
+    <a href="https://youtu.be/O83vXZ1L4kk?si=G1TWWgoXW4IMnLg4" target="_blank" style="text-decoration:none;" class="reveal">
+      <article class="podcast-card">
+        <div class="podcast-thumb-wrap">
+          <img
+            src="https://img.youtube.com/vi/O83vXZ1L4kk/maxresdefault.jpg"
+            alt="Episode 1 thumbnail — Are EVs Really Green?"
+            onerror="this.src='https://img.youtube.com/vi/O83vXZ1L4kk/hqdefault.jpg'"
+          >
+          <div class="podcast-play-overlay">
+            <div class="podcast-play-btn">
+              <i class="fa-solid fa-play" style="margin-left:3px;"></i>
+            </div>
+          </div>
+        </div>
+        <div class="podcast-info">
+          <span class="badge badge-latest" style="margin-bottom:0.6rem; display:inline-block;">Latest Episode</span>
+          <h2>Episode 1: Are EVs REALLY Green?</h2>
+          <p>
+            We dive into the full environmental lifecycle of electric vehicles — from production to disposal — and debate whether the "green" label holds up under scrutiny.
+          </p>
+          <div class="podcast-meta">
+            <span><i class="fa-regular fa-clock"></i> 24 min</span>
+            <span><i class="fa-solid fa-users"></i> 2 Speakers</span>
+            <span><i class="fa-regular fa-calendar"></i> Jan 12, 2026</span>
+          </div>
+        </div>
+      </article>
+    </a>
+
+    <!-- Coming Soon -->
+    <article class="podcast-card reveal" style="opacity:0.8;">
+      <div class="podcast-thumb-wrap" style="background: linear-gradient(135deg, #1a3a1a, #2d6a2d); display:flex; align-items:center; justify-content:center; padding-top:0; height:200px;">
+        <i class="fa-solid fa-microphone" style="font-size:3rem; color:rgba(255,255,255,0.3);"></i>
       </div>
-      <h2>Episode 1: Are EVs REALLY green?</h2>
-    </a><br>
-    <p>
-      In this episode, we dive into the environmental impact of electric vehicles (EVs). Are they truly the green alternative they're touted to be? Join us as we discuss the lifecycle emissions of EVs, from production to disposal, and hear insights from experts in the field.
-    </p>
-    <small>⏱ 24 min • <i class="fas fa-user-friends"></i> 2 Speakers • January 12th, 2026</small>
-  </article>
+      <div class="podcast-info">
+        <span class="badge badge-upcoming" style="margin-bottom:0.6rem; display:inline-block;">Coming Soon</span>
+        <h2>Episode 2: The Recycling Illusion</h2>
+        <p>
+          Building on Blog 2, this episode will bring in expert voices to examine whether recycling programs are as effective as we've been led to believe.
+        </p>
+        <div class="podcast-meta">
+          <span><i class="fa-regular fa-calendar"></i> Upcoming</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
 </main>
+
 <footer>
-  <p>&copy; Eco-Mythbusters Roundtable | Created by Ritayush Suchismita Dey</p>
+  <p>&copy; Eco-Mythbusters Roundtable | Created by <strong>Ritayush Suchismita Dey</strong></p>
 </footer>
 
 <script src="../js/main.js" defer></script>
