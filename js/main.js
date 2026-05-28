@@ -163,3 +163,67 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(typeNext, initialDelay);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const statusLabels = {
+    'latest': { text: 'Latest', className: 'badge-latest' },
+    'not-read': { text: 'Not read', className: 'badge-not-read' },
+    'read': { text: 'Read', className: 'badge-read' },
+    'downloaded': { text: 'Downloaded', className: 'badge-downloaded' },
+    'upcoming': { text: 'Coming Soon', className: 'badge-upcoming' }
+  };
+
+  const latestBlogId = 'blog2';
+  const storageKeyPrefix = 'ecoBlogStatus-';
+
+  function getSavedStatus(id) {
+    return localStorage.getItem(storageKeyPrefix + id);
+  }
+
+  function saveStatus(id, status) {
+    localStorage.setItem(storageKeyPrefix + id, status);
+  }
+
+  function computeStatus(id, savedStatus) {
+    if (id === 'blog3') return 'upcoming';
+    if (savedStatus === 'downloaded') return 'downloaded';
+    if (savedStatus === 'read') return 'read';
+    return id === latestBlogId ? 'latest' : 'not-read';
+  }
+
+  function updateArticleBadge(article) {
+    const blogId = article.dataset.blogId;
+    const savedStatus = getSavedStatus(blogId);
+    const displayStatus = computeStatus(blogId, savedStatus);
+    const badge = article.querySelector('.badge-status');
+    if (!badge) return;
+    const label = statusLabels[displayStatus] || statusLabels['not-read'];
+    badge.textContent = label.text;
+    badge.className = `badge badge-status ${label.className}`;
+  }
+
+  document.querySelectorAll('.blog-article').forEach(article => {
+    updateArticleBadge(article);
+
+    const readLink = article.querySelector('a.link[href$=".pdf"]');
+    const downloadLink = article.querySelector('a.downloadblogbtn');
+    const blogId = article.dataset.blogId;
+
+    if (readLink) {
+      readLink.addEventListener('click', () => {
+        const currentStatus = getSavedStatus(blogId);
+        if (currentStatus !== 'downloaded') {
+          saveStatus(blogId, 'read');
+        }
+        updateArticleBadge(article);
+      });
+    }
+
+    if (downloadLink) {
+      downloadLink.addEventListener('click', () => {
+        saveStatus(blogId, 'downloaded');
+        updateArticleBadge(article);
+      });
+    }
+  });
+});

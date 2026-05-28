@@ -296,7 +296,22 @@ html, body { max-width: 100%; overflow-x: hidden; }
   background: var(--primary);
   color: white;
 }
- 
+
+.badge-not-read {
+  background: #f59e0b;
+  color: white;
+}
+
+.badge-read {
+  background: #10b981;
+  color: white;
+}
+
+.badge-downloaded {
+  background: #3b82f6;
+  color: white;
+}
+
 .badge-upcoming {
   background: #f3f4f6;
   color: var(--text-muted);
