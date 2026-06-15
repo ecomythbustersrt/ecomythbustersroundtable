@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'upcoming': { text: 'Coming Soon', className: 'badge-upcoming' }
   };
 
-  const latestBlogId = 'blog2';
+  const latestBlogId = 'blog3';
   const storageKeyPrefix = 'ecoBlogStatus-';
 
   function getSavedStatus(id) {
@@ -185,7 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function computeStatus(id, savedStatus) {
-    if (id === 'blog3') return 'upcoming';
     if (savedStatus === 'downloaded') return 'downloaded';
     if (savedStatus === 'read') return 'read';
     return id === latestBlogId ? 'latest' : 'not-read';

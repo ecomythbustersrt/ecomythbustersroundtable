@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog 3: AI and Sustainability | Eco-Mythbusters</title>
+  <link rel="icon" href="../imgs/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI: Driving Innovation, Draining Sustainability. A deep dive into the real environmental cost of artificial intelligence by Ritayush Suchismita Dey." />
+  <script src="https://kit.fontawesome.com/cad18a28f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<header class="site-header">
+  <img src="../imgs/ecomythlogofohead.png" alt="Eco-Mythbusters Logo">
+</header>
+
+<nav class="site-nav">
+  <button class="close-nav" aria-label="Close menu">&#10005;</button>
+  <button class="nav-toggle" aria-label="Open navigation">
+    <span class="hamburger"></span>
+  </button>
+  <div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="../html/blogs.html" class="active" id="blogs-nav-link">Blogs</a>
+    <a href="../html/podcasts.html">Podcasts</a>
+    <a href="../html/contact.html">Contact Us</a>
+  </div>
+</nav>
+<div class="blog-page-header">
+  <h1>AI: Driving Innovation, Draining Sustainability</h1>
+  <p class="blog-byline">By <strong>Ritayush Suchismita Dey</strong></p>
+  <div class="blog-meta-row">
+    <span><i class="fa-regular fa-calendar"></i> Saturday, 13th June 2026</span>
+    <span><i class="fa-regular fa-clock"></i> 10 min read</span>
+  </div>
+  <div class="blog-header-actions">
+    <a href="../blogs/Eco-Mythbusters Roundtable Blog 3.pdf" download class="downloadblogbtn">
+      <i class="fa-solid fa-download"></i> Download PDF
+    </a>
+  </div>
+</div>
+
+<div class="blog-outer">
+
+  <aside class="section-sidebar" aria-label="Jump to section">
+    <div class="sidebar-inner">
+      <span class="sidebar-heading">In this article</span>
+      <a class="sidebar-link" href="#intro">Behind Every Prompt</a>
+      <a class="sidebar-link" href="#infrastructure">Infrastructure</a>
+      <a class="sidebar-link" href="#training">Training an AI</a>
+      <a class="sidebar-link" href="#inference">Inference</a>
+      <a class="sidebar-link" href="#hardware">Hardware</a>
+      <a class="sidebar-link" href="#lifecycle">AI Lifecycle</a>
+      <a class="sidebar-link" href="#rebound">The Rebound Effect</a>
+      <a class="sidebar-link" href="#data-table">Data Analysis</a>
+      <a class="sidebar-link" href="#conclusion">Conclusion</a>
+      <a class="sidebar-link" href="#sustainability-tabs">Sustainability Considerations</a>
+      <a class="sidebar-link" href="#bibliography">Sources</a>
+    </div>
+  </aside>
+
+  <article class="blog-content">
+
+    <div class="jump-wrap">
+      <label for="section-jump">Jump to section</label>
+      <select class="jump-select" id="section-jump">
+        <option value="">Select a section...</option>
+        <option value="intro">Behind Every Prompt</option>
+        <option value="infrastructure">The Underlying Infrastructure</option>
+        <option value="training">Training an AI</option>
+        <option value="inference">Inference</option>
+        <option value="hardware">Hardware</option>
+        <option value="lifecycle">AI Lifecycle</option>
+        <option value="rebound">The Rebound Effect</option>
+        <option value="data-table">Data Analysis</option>
+        <option value="conclusion">Conclusion</option>
+        <option value="verdict">Verdict</option>
+        <option value="sustainability-tabs">Sustainability Considerations</option>
+        <option value="bibliography">Sources</option>
+      </select>
+    </div>
+
+    <!-- INTRO -->
+    <section class="blog-section reveal" id="intro">
+      <h2>Behind Every Prompt...</h2>
+      <p>Think about the last time you typed a question into an AI chatbot, asked a voice assistant for directions, or let an algorithm choose your next playlist. These interactions feel effortless, almost weightless. There is no factory chimney, no diesel exhaust, no visible resource being consumed. The interface is clean, the response is instant, and the transaction feels entirely contained within the screen. That frictionless experience is precisely what makes the environmental cost of artificial intelligence so easy to ignore.</p>
+      <p>Artificial intelligence has become one of the defining technological forces of this decade. From personalised recommendation engines and real-time translation tools to generative systems capable of producing essays, images, and code on demand, AI now touches nearly every domain of modern life. Its proponents frequently highlight its potential to decarbonise industries, reduce logistical waste, and accelerate climate modelling. These benefits are real, and they matter. But the same technology that promises to optimise the world runs on an infrastructure of extraordinary physical scale, one that consumes enormous quantities of electricity, water, and rare materials. The sustainability of artificial intelligence cannot be evaluated through its interface alone. The question worth asking is what it costs to keep the lights on beneath that interface.</p>
+
+      <div class="flip-card-wrap" aria-label="Myth versus Reality interactive card">
+        <div class="flip-card" id="myth-flip">
+          <div class="flip-face flip-front">
+            <span class="flip-label">The Myth</span>
+            <p>Artificial intelligence is becoming so computationally efficient that its environmental footprint is naturally diminishing.</p>
+            <button class="flip-btn flip-btn-front" id="flip-reveal" aria-label="Reveal the reality">
+              Reveal the Reality <i class="fa-solid fa-rotate"></i>
+            </button>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="flip-label">The Reality</span>
+            <p>While individual AI models and processors have become more efficient, these gains are frequently outpaced by explosive growth in model size, training requirements, data-centre expansion, user base, and the trillions of inferences performed daily.</p>
+            <button class="flip-btn flip-btn-back" id="flip-back-btn" aria-label="Flip back to the myth">
+              <i class="fa-solid fa-rotate-left"></i> Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFRASTRUCTURE -->
+    <section class="blog-section reveal" id="infrastructure">
+      <h2>The Underlying Infrastructure</h2>
+      <p>Every AI system, regardless of how it presents itself to the user, is physically anchored to a network of data centres. These are not passive storage rooms. They are vast facilities that operate continuously to handle the storage, processing, and retrieval of data generated by training pipelines, user interactions, and model outputs. Importantly, modern data centres have become significantly more efficient over time, with improvements in server utilisation, cooling systems, and power management. Yet efficiency alone has not reduced overall resource consumption because the scale of AI deployment has expanded even faster. In 2024, global data centre electricity consumption reached approximately 415 terawatt-hours, accounting for nearly 1.5% of total global electricity use. Projections from the International Energy Agency suggest this figure is on course to more than double by 2026, driven primarily by the rapid expansion of generative AI systems. This is the central challenge to the assumption that greater efficiency automatically produces sustainability: even as computing infrastructure becomes more efficient, total electricity demand continues to rise because AI adoption is growing at an extraordinary pace.</p>
+      <p>The energy demand alone would be striking enough. But the burden extends further. Servers generate enormous quantities of heat, and cooling them requires water in quantities that dwarf what most people would imagine. Hyperscale data centres, the kind that power large language models and cloud AI services, can consume hundreds of thousands of gallons of water daily. Some individual facilities use up to 550,000 gallons of water per day just to maintain operating temperatures. Microsoft's data centre operations consumed approximately 1.7 billion gallons of freshwater in 2022 alone, a 34% increase from the prior year, largely attributable to AI infrastructure expansion. In regions already under water stress, including parts of the American Southwest and South Asia, siting these facilities raises questions that extend well beyond electricity bills. It is worth acknowledging that data centres also power services that are not AI at all, from email servers to video streaming. The attribution is not clean. But what distinguishes AI workloads is not merely their per-transaction intensity, but also the speed at which demand for them is increasing. The infrastructure was scaling before generative AI arrived; it is now scaling far faster. This distinction matters because sustainability depends not only on how efficiently resources are used, but also on how much total demand is created. AI systems may be becoming more efficient, yet the infrastructure supporting them continues to grow in absolute size and resource consumption.</p>
+
+      <div class="stat-counter-grid" id="stat-counters">
+        <div class="stat-counter-card">
+          <span class="counter-num" data-target="415" data-suffix=" TWh">0 TWh</span>
+          <p class="counter-label">Global data centre electricity consumption (2024)</p>
+        </div>
+        <div class="stat-counter-card">
+          <span class="counter-num" data-target="1.7" data-decimal="1" data-suffix=" B gallons">0 B gallons</span>
+          <p class="counter-label">Microsoft freshwater use in 2022 alone</p>
+        </div>
+        <div class="stat-counter-card">
+          <span class="counter-num" data-target="284" data-suffix=" tonnes"></span>
+          <p class="counter-label">CO&#x2082; equivalent from training one large LLM</p>
+        </div>
+        <div class="stat-counter-card">
+          <span class="counter-num" data-target="62" data-suffix=" Mt">0 Mt</span>
+          <p class="counter-label">Global e-waste generated in 2022</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING -->
+    <section class="blog-section reveal" id="training">
+      <h2>Creation Comes at a Cost: Training an AI</h2>
+      <p>Before an AI model responds to a single query, it must be trained. Training is the process by which a model learns patterns from enormous datasets, adjusting billions of internal parameters across repeated computational cycles. Although advances in hardware and optimisation techniques have made training significantly more efficient than it was a decade ago, the scale of modern models has expanded just as rapidly. Training a large-scale language model can still take weeks or months, running on thousands of specialised processors simultaneously.</p>
+      <p>A landmark 2019 study from the University of Massachusetts Amherst estimated that training a single large transformer model could emit approximately 284 tonnes of carbon dioxide equivalent, comparable to the lifetime emissions of five average American cars. More recent models are considerably larger. GPT-3, with 175 billion parameters, is estimated to have consumed around 1,287 megawatt-hours of electricity during training. The significance of this figure lies not merely in its size, but in what it represents: efficiency gains in computing have often been accompanied by an even faster increase in model complexity and computational ambition. A 2023 study published in Nature estimated that training a single large language model consumed approximately 700,000 litres of freshwater, primarily for data centre cooling. These are not marginal costs that can be absorbed quietly into a sustainability report.</p>
+      <p>There is a further dimension that is often omitted from these calculations: models are not trained once. They are retrained, fine-tuned, and updated repeatedly. Organisations running competitive AI products may retrain foundational models multiple times annually. As training becomes faster and more affordable, the incentive to retrain and develop larger models also increases. The cumulative footprint is therefore a multiple of any single training run, compounded across the industry.</p>
+      <p>None of this is an argument against building AI systems. Rather, it is an argument for questioning the assumption that greater efficiency automatically translates into sustainability. If each improvement in training efficiency is accompanied by larger models, more frequent retraining, and greater deployment, total resource consumption may continue to rise despite technological progress.</p>
+
+      <div class="insight-card">
+        <span class="insight-icon"><i class="fa-solid fa-car-side"></i></span>
+        <div class="insight-body">
+          <span class="insight-label">Carbon comparison</span>
+          <p>Training a single large-scale language model can emit carbon dioxide levels equivalent to the lifetime emissions of <strong>five average American cars</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFERENCE -->
+    <section class="blog-section reveal" id="inference">
+      <h2>Every Prompt Comes at a Price: Inference</h2>
+      <p>If training is the foundation, inference is the ongoing operation. Inference refers to the process by which a trained model generates a response: the computation triggered every time a user submits a query. Advances in hardware and model optimisation have made this process significantly faster and more efficient over time, reducing the computational cost of generating any single response. Unlike training, which is periodic, inference is continuous. It happens billions of times daily, across every product built on top of an AI model.</p>
+      <p>Several studies indicate that inference now accounts for approximately 60% of the total energy consumption of AI systems, surpassing the training phase, which is often mistakenly assumed to dominate. A single query to a large language model can consume up to ten times the electricity of a standard web search. When that figure is scaled across the millions of daily users of platforms like ChatGPT, which reportedly crossed 100 million users within two months of launch and has continued growing since, the cumulative energy demand becomes very large very quickly.</p>
+      <div class="query-compare">
+        <div class="qc-item">
+          <span class="qc-icon"><i class="fa-solid fa-robot"></i></span>
+          <span class="qc-label">AI chatbot query</span>
+          <span class="qc-sub">~0.001–0.01 kWh</span>
+        </div>
+        <div class="qc-mid">
+          <span class="qc-mult">10&times;</span>
+          <span class="qc-more">more energy</span>
+        </div>
+        <div class="qc-item qc-muted">
+          <span class="qc-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <span class="qc-label">Standard web search</span>
+          <span class="qc-sub">~0.0003 kWh</span>
+        </div>
+      </div>
+
+      <p>The counterargument often raised here is that AI inference replaces other, more energy-intensive activities. If a chatbot reduces the number of customer service calls handled by physical call centres, or if a logistics algorithm prevents unnecessary truck journeys, the net environmental equation may still favour AI.</p>
+      <p>This logic holds in specific, well-designed applications. It does not hold universally, and particularly not in the widespread casual use cases that now constitute the majority of AI queries. As AI becomes cheaper, faster, and easier to access, it is increasingly used for tasks that were never previously performed at all, meaning efficiency gains do not necessarily translate into proportional environmental savings.</p>
+    </section>
+
+    <!-- HARDWARE -->
+    <section class="blog-section reveal" id="hardware">
+      <h2>The Machines Behind the Mind: Hardware</h2>
+      <p>The intangibility of AI output can obscure just how physically demanding its hardware requirements are. AI systems rely on specialised processors, particularly Graphics Processing Units (GPUs) and, increasingly, custom AI accelerator chips. Manufacturing these components is energy-intensive and depends on the extraction of critical minerals, including cobalt, lithium, tantalum, and rare earth elements, many of which are sourced under conditions that carry their own environmental and ethical costs.</p>
+      <p>Beyond manufacture, there is the question of lifecycle. The pace of advancement in AI hardware is rapid. A GPU generation that is competitive today may be considered obsolete within two to three years as newer architectures offer efficiency and performance gains. Paradoxically, the very improvements that make AI hardware more efficient can also shorten replacement cycles, encouraging organisations to retire functional equipment in pursuit of greater computational performance and lower operating costs.</p>
+      <p>This accelerated obsolescence drives a corresponding acceleration in electronic waste. Efficiency improvements, therefore, do not eliminate environmental costs; they can shift those costs upstream into mineral extraction and downstream into disposal and replacement.</p>
+      <p>The United Nations Environment Programme estimates that global e-waste generation reached 62 million tonnes in 2022, a figure projected to rise further as AI hardware demands increase. Unlike some forms of industrial waste, electronic waste contains hazardous materials including lead, mercury, and cadmium, requiring specialised handling that, in practice, is frequently absent.</p>
+      <p>The hardware lifecycle is therefore not a footnote to AI's environmental story. It is a chapter that begins before any model is trained and continues long after any particular system has been retired.</p>
+    </section>
+
+    <!-- LIFECYCLE DIAGRAM -->
+    <section class="blog-section reveal" id="lifecycle">
+      <h2>The AI Hardware Lifecycle</h2>
+      <p>The environmental cost of AI spans every stage from raw material extraction to final disposal. Click any stage below to expand its description.</p>
+      <div class="lifecycle-wrap">
+        <div class="lifecycle-flow" role="list">
+
+          <div class="lc-stage" role="listitem button" tabindex="0" aria-expanded="false" data-lc="0">
+            <span class="lc-icon"><i class="fa-solid fa-gem"></i></span>
+            <div class="lc-name">Mineral Extraction</div>
+            <div class="lc-desc">Critical minerals including cobalt, lithium, tantalum, and rare earth elements are extracted under conditions that carry significant environmental and ethical costs, before a single chip is fabricated.</div>
+          </div>
+
+          <div class="lc-arrow" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></div>
+
+          <div class="lc-stage" role="listitem button" tabindex="0" aria-expanded="false" data-lc="1">
+            <span class="lc-icon"><i class="fa-solid fa-microchip"></i></span>
+            <div class="lc-name">Chip Manufacturing</div>
+            <div class="lc-desc">Energy-intensive fabrication of GPUs and AI accelerator chips creates substantial upstream environmental costs through chemical processes and precision manufacturing at scale.</div>
+          </div>
+
+          <div class="lc-arrow" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></div>
+
+          <div class="lc-stage" role="listitem button" tabindex="0" aria-expanded="false" data-lc="2">
+            <span class="lc-icon"><i class="fa-solid fa-brain"></i></span>
+            <div class="lc-name">Model Training</div>
+            <div class="lc-desc">A single large-scale training run can consume over 1,287 MWh of electricity and 700,000 litres of freshwater across weeks of continuous computation on thousands of processors simultaneously.</div>
+          </div>
+
+          <div class="lc-arrow" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></div>
+
+          <div class="lc-stage" role="listitem button" tabindex="0" aria-expanded="false" data-lc="3">
+            <span class="lc-icon"><i class="fa-solid fa-bolt"></i></span>
+            <div class="lc-name">Inference at Scale</div>
+            <div class="lc-desc">Inference accounts for approximately 60% of AI's total energy consumption, happening billions of times daily across every deployed model and every product built on top of one.</div>
+          </div>
+
+          <div class="lc-arrow" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></div>
+
+          <div class="lc-stage" role="listitem button" tabindex="0" aria-expanded="false" data-lc="4">
+            <span class="lc-icon"><i class="fa-solid fa-trash-can"></i></span>
+            <div class="lc-name">Hardware Disposal</div>
+            <div class="lc-desc">Rapid obsolescence driven by competitive pressure contributes to growing volumes of hazardous e-waste containing lead, mercury, and cadmium, with adequate recycling infrastructure frequently absent.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REBOUND EFFECT -->
+    <section class="blog-section reveal" id="rebound">
+      <h2>The Rebound Effect</h2>
+      <p>Perhaps the most structurally important dimension of AI's environmental impact is not any single cost in isolation, but the dynamic by which efficiency gains lead to increased total consumption. This phenomenon, known as the rebound effect, has appeared repeatedly across the history of technological improvement. When fuel efficiency in automobiles improved significantly through the 1980s and 1990s, consumers responded in part by driving more, buying larger vehicles, and commuting further. Total fuel consumption did not fall proportionately to the per-kilometre efficiency gain.</p>
+      <p>The same logic applies to AI. As models become faster, cheaper, and more accessible, they attract more users, more use cases, and more integration into products and workflows. Each marginal improvement in AI efficiency is likely to be met, and then exceeded, by growth in demand. Recent projections from Goldman Sachs Research suggest that AI-related energy consumption could increase electricity demand in the United States by as much as 15% by 2030, even under conservative adoption scenarios. Global AI-related emissions could reach up to 80 million tonnes of carbon dioxide annually under high-growth trajectories, with water consumption potentially exceeding global bottled water usage.</p>
+      <blockquote class="pull-quote">
+        <p>AI-driven electricity demand could increase by up to <strong>15%</strong> in the United States by 2030, with global AI-related emissions potentially reaching <strong>80 million tonnes of CO&#x2082;</strong> annually and water consumption exceeding global bottled water usage.</p>
+        <cite>Goldman Sachs Research (2024)</cite>
+      </blockquote>
+
+      <p>This does not make AI development indefensible. It does make the assumption that AI is automatically and inherently sustainable deeply questionable. Sustainability must be evaluated at the system level.</p>
+    </section>
+
+    <!-- DATA TABLE -->
+    <section class="blog-section reveal" id="data-table">
+      <h2>Comparative Data Analysis: AI's Environmental Footprint</h2>
+      <p>The figures below synthesise estimates from peer-reviewed research, IEA energy data, and published corporate sustainability disclosures to contextualise AI's resource demands against benchmarks that are simpler to visualise.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Process</th>
+              <th>Energy / Resource Use</th>
+              <th>Equivalent Impact</th>
+              <th>Research Basis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Process">
+                Training one large-scale LLM (e.g., GPT-3 scale)
+                <span class="tip-wrap">
+                  <i class="fa-solid fa-circle-info tip-icon" aria-label="Source info"></i>
+                  <span class="tip-box">Strubell et al. (2019); Li et al. (2023, Nature)</span>
+                </span>
+              </td>
+              <td data-label="Energy / Resource Use">~1,287 MWh electricity; ~700,000 L water</td>
+              <td data-label="Equivalent Impact">~284 tCO&#x2082;e, equivalent to the lifetime emissions of 5 cars</td>
+              <td data-label="Research Basis">Strubell et al. (2019); Li et al. (2023, Nature)</td>
+            </tr>
+            <tr>
+              <td data-label="Process">
+                Single AI chatbot query
+                <span class="tip-wrap">
+                  <i class="fa-solid fa-circle-info tip-icon" aria-label="Source info"></i>
+                  <span class="tip-box">Goldman Sachs Research (2024); Luccioni et al. (2023)</span>
+                </span>
+              </td>
+              <td data-label="Energy / Resource Use">~0.001-0.01 kWh (approx. 10x a standard web search)</td>
+              <td data-label="Equivalent Impact">~0.5-4 g CO&#x2082;e per query; ~500 mL water consumed at the data centre</td>
+              <td data-label="Research Basis">Goldman Sachs Research (2024); Luccioni et al. (2023)</td>
+            </tr>
+            <tr>
+              <td data-label="Process">
+                1 billion daily AI queries (platform scale)
+                <span class="tip-wrap">
+                  <i class="fa-solid fa-circle-info tip-icon" aria-label="Source info"></i>
+                  <span class="tip-box">Derived from IEA data and per-query estimates</span>
+                </span>
+              </td>
+              <td data-label="Energy / Resource Use">~1,000-10,000 MWh/day electricity</td>
+              <td data-label="Equivalent Impact">Equivalent to powering ~100,000 average U.S. households for one day</td>
+              <td data-label="Research Basis">Derived from IEA data and per-query estimates</td>
+            </tr>
+            <tr>
+              <td data-label="Process">
+                Global data centres (2024, all workloads)
+                <span class="tip-wrap">
+                  <i class="fa-solid fa-circle-info tip-icon" aria-label="Source info"></i>
+                  <span class="tip-box">IEA Data Centres Report (2024)</span>
+                </span>
+              </td>
+              <td data-label="Energy / Resource Use">~415 TWh/year electricity</td>
+              <td data-label="Equivalent Impact">~1.5% of global electricity use; projected to double by 2026</td>
+              <td data-label="Research Basis">IEA Data Centres Report (2024)</td>
+            </tr>
+            <tr>
+              <td data-label="Process">
+                Microsoft data centre water use (2022)
+                <span class="tip-wrap">
+                  <i class="fa-solid fa-circle-info tip-icon" aria-label="Source info"></i>
+                  <span class="tip-box">Microsoft Environmental Sustainability Report (2022)</span>
+                </span>
+              </td>
+              <td data-label="Energy / Resource Use">~1.7 billion gallons of freshwater/year</td>
+              <td data-label="Equivalent Impact">+34% year-over-year increase, largely driven by AI infrastructure expansion</td>
+              <td data-label="Research Basis">Microsoft Environmental Sustainability Report (2022)</td>
+            </tr>
+            <tr>
+              <td data-label="Process">
+                Global AI-related emissions
+                <span class="tip-wrap">
+                  <i class="fa-solid fa-circle-info tip-icon" aria-label="Source info"></i>
+                  <span class="tip-box">Goldman Sachs Research (2024); UNEP (2023)</span>
+                </span>
+              </td>
+              <td data-label="Energy / Resource Use">Energy demand +15% in the U.S. by 2030 (conservative estimate)</td>
+              <td data-label="Equivalent Impact">Up to 80 Mt CO&#x2082;e/year; water use potentially exceeding global bottled water consumption</td>
+              <td data-label="Research Basis">Goldman Sachs Research (2024); UNEP (2023)</td>
+            </tr>
+            <tr>
+              <td data-label="Process">
+                Global e-waste from AI hardware (2022 baseline)
+                <span class="tip-wrap">
+                  <i class="fa-solid fa-circle-info tip-icon" aria-label="Source info"></i>
+                  <span class="tip-box">UNEP Global E-Waste Monitor (2024)</span>
+                </span>
+              </td>
+              <td data-label="Energy / Resource Use">62 million tonnes of e-waste generated globally</td>
+              <td data-label="Equivalent Impact">Contains hazardous materials such as lead (Pb), mercury (Hg), and cadmium (Cd); recycling infrastructure remains inadequate in many regions</td>
+              <td data-label="Research Basis">UNEP Global E-Waste Monitor (2024)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-caption" style="font-style: italic; font-size: 0.7em; color:#666">Table 1: Synthesised environmental footprint estimates for AI systems across the value chain. Sources: Strubell et al. (2019); Li et al. (2023); IEA Data Centres and Data Transmission Networks Report (2024); Goldman Sachs Research (2024); Microsoft Environmental Sustainability Report (2022); UNEP Global E-Waste Monitor (2024); Luccioni et al. (2023).</p>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="blog-section reveal" id="conclusion">
+      <h2>Conclusion</h2>
+      <p>Using AI is not inherently unsustainable. The technology holds genuine promise in applications where computational intelligence can replace more resource-intensive processes, accelerate scientific discovery, or reduce systemic inefficiency at scale. The challenge is not that AI is becoming less efficient; in many respects, it is becoming dramatically more efficient. The challenge is that improvements in efficiency are frequently accompanied by even greater growth in deployment, infrastructure, and demand. Beneath every query, every generated image, and every auto-completed sentence lies a physical system consuming electricity, water, and hardware resources. The infrastructure supporting these interactions is expanding at a pace that often exceeds the environmental savings generated by technological progress alone.</p>
+      <p>The most important reframe is this: sustainability is not a property of the technology itself, nor is it an automatic consequence of greater efficiency. It is a property of how the technology is built, powered, deployed, and scaled. The same AI system can represent a net environmental gain in one context and a net environmental loss in another, depending on the energy mix powering it, the necessity of its application, the efficiency discipline of its designers, and whether growth in demand remains proportionate to the efficiency gains being achieved.</p>
+    </section>
+
+    <!-- TABS: WHEN SUSTAINABLE / WHEN NOT -->
+    <section class="blog-section reveal" id="sustainability-tabs">
+      <div class="tab-buttons" role="tablist">
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-sus" id="btn-sus">When AI Systems are Sustainable</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-not" id="btn-not">When They're Not</button>
+      </div>
+
+      <div class="tab-panel active" id="tab-sus" role="tabpanel" aria-labelledby="btn-sus">
+        <ul>
+          <li>
+            <i class="fa-solid fa-circle-check tab-icon sustainable-icon"></i>
+            When data centres are powered predominantly by verified renewable energy, directly reducing the carbon intensity of every training run and inference cycle.
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-check tab-icon sustainable-icon"></i>
+            When AI is deployed in high-impact applications, such as grid optimisation, precision agriculture, or drug discovery, where the efficiency gains demonstrably outweigh the computational cost.
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-check tab-icon sustainable-icon"></i>
+            When models are designed with computational efficiency as a deliberate objective, favouring smaller, purpose-specific architectures over unnecessarily large systems, and limiting redundant retraining cycles.
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-check tab-icon sustainable-icon"></i>
+            When hardware lifecycle management includes sustainable sourcing of critical minerals and formal, accessible pathways for electronic waste recycling.
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="tab-not" role="tabpanel" aria-labelledby="btn-not">
+        <ul>
+          <li>
+            <i class="fa-solid fa-circle-xmark tab-icon notsus-icon"></i>
+            When data centres continue to rely on fossil fuel-based electricity, meaning every interaction contributes directly to carbon emissions regardless of how the AI is used.
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-xmark tab-icon notsus-icon"></i>
+            When large-scale models are retrained repeatedly without commensurate improvements in capability or application value, generating excessive computational expenditure.
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-xmark tab-icon notsus-icon"></i>
+            When the rebound effect takes hold and increased accessibility drives disproportionate growth in trivial or low-value use cases, transforming marginal per-query costs into a substantial collective burden.
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-xmark tab-icon notsus-icon"></i>
+            When rapid hardware obsolescence, driven by competitive pressure rather than genuine necessity, accelerates the extraction of finite materials and contributes to growing volumes of hazardous electronic waste.
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-xmark tab-icon notsus-icon"></i>
+            When the framing of AI as a digital and therefore resource-free technology goes unchallenged, allowing the infrastructure costs to remain invisible in both public discourse and corporate accountability frameworks.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BIBLIOGRAPHY -->
+    <section class="blog-section reveal" id="bibliography">
+      <button class="bib-toggle" id="bib-toggle" aria-expanded="false" aria-controls="bib-body">
+        <i class="fa-solid fa-chevron-down bib-chevron"></i>
+        View Sources (8)
+      </button>
+      <div class="bib-body" id="bib-body" aria-hidden="true">
+        <ol>
+          <li>Strubell, Emma, Ananya Ganesh, and Andrew McCallum. "Energy and Policy Considerations for Deep Learning in NLP." <em>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics</em>, 2019. <a href="https://arxiv.org/abs/1906.02629" target="_blank" rel="noopener">https://arxiv.org/abs/1906.02629</a>. Accessed 13 June 2026.</li>
+          <li>Li, Pengfei, et al. "Making AI Less Thirsty: Uncovering and Addressing the Secret Water Footprint of AI Models." <em>arXiv</em>, 2023. <a href="https://arxiv.org/abs/2304.03271" target="_blank" rel="noopener">https://arxiv.org/abs/2304.03271</a>. Accessed 13 June 2026.</li>
+          <li>International Energy Agency. "Data Centres and Data Transmission Networks." IEA, 2024. <a href="https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks" target="_blank" rel="noopener">https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks</a>. Accessed 13 June 2026.</li>
+          <li>Goldman Sachs Research. "AI is Poised to Drive 160% Increase in Data Centre Power Demand." Goldman Sachs, 2024. <a href="https://www.goldmansachs.com" target="_blank" rel="noopener">https://www.goldmansachs.com</a>. Accessed 13 June 2026.</li>
+          <li>Luccioni, Alexandra Sasha, Sylvain Viguier, and Anne-Laure Ligozat. "Estimating the Carbon Footprint of BLOOM, a 176B Parameter Language Model." <em>Journal of Machine Learning Research</em>, 2023. <a href="https://arxiv.org/abs/2211.02001" target="_blank" rel="noopener">https://arxiv.org/abs/2211.02001</a>. Accessed 13 June 2026.</li>
+          <li>Microsoft Corporation. "Environmental Sustainability Report 2022." Microsoft, 2022. <a href="https://blogs.microsoft.com/on-the-issues/2022/05/05/2022-environmental-sustainability-report" target="_blank" rel="noopener">https://blogs.microsoft.com/on-the-issues/2022/05/05/2022-environmental-sustainability-report</a>. Accessed 13 June 2026.</li>
+          <li>United Nations Environment Programme. "Global E-Waste Monitor 2024." UNEP, 2024. <a href="https://www.unep.org/resources/report/global-e-waste-monitor-2024" target="_blank" rel="noopener">https://www.unep.org/resources/report/global-e-waste-monitor-2024</a>. Accessed 13 June 2026.</li>
+          <li>Crawford, Kate. <em>Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence</em>. Yale University Press, 2021.</li>
+        </ol>
+      </div>
+    </section>
+
+  </article>
+</div>
+
+<div class="back-to-blogs-wrap">
+  <a href="../html/blogs.html" class="back-to-blogs-btn">
+    <i class="fa-solid fa-arrow-left"></i> Back to Blogs
+  </a>
+</div>
+
+<footer>
+  <p>&copy; Eco-Mythbusters Roundtable | Created by <strong>Ritayush Suchismita Dey</strong></p>
+</footer>
+
+<script src="../js/main.js" defer></script>
+<script src="../js/blog3.js" defer></script>
+</body>
+</html>
