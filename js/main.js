@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'upcoming': { text: 'Coming Soon', className: 'badge-upcoming' }
   };
 
-  const latestBlogId = 'blog5';
+  const latestBlogId = 'blog6';
   const storageKeyPrefix = 'ecoBlogStatus-';
 
   function getSavedStatus(id) {
