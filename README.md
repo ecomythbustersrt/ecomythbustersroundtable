@@ -12,8 +12,8 @@ Environmental issues are often surrounded by myths, oversimplifications, and tre
 
 The project consists of:
 
-- **Analytical Blogs** — Each article investigates a common sustainability myth using scientific evidence, data, and critical analysis.
-- **Evaluative Podcasts** — Every podcast builds upon a blog by bringing together peers, local voices, and professionals, including environmental scientists, NGO workers, policymakers, and technology innovators.
+- **Analytical Blogs:** Each article investigates a common sustainability myth using scientific evidence, data, and critical analysis.
+- **Evaluative Podcasts:** Every podcast builds upon a blog by bringing together peers, local voices, and professionals, including environmental scientists, NGO workers, policymakers, and technology innovators.
 
 Together, they provide a more nuanced understanding of environmental challenges and solutions.
 
